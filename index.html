@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หน้าหลัก - วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</title>
+    <!-- เพิ่ม Font Awesome สำหรับไอคอนตกแต่ง -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- เชื่อมโยงไฟล์ style.css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- ส่วนหัว Header ที่ย้ายรูปโลโก้มาไว้ด้านหน้าข้อความ -->
+    <!-- ส่วนหัว (Header) พร้อมรูปโลโก้หน้าชื่อวิทยาลัย -->
     <header>
         <div class="header-content">
+            <!-- ⚠️ ตรวจสอบชื่อไฟล์รูปภาพ ให้ตรงกับไฟล์ในเครื่องของคุณ (เช่น logo_lannapoly.png หรือ images/logo_lannapoly.png) -->
             <img src="logo_lannapoly.png" alt="โลโก้วิทยาลัย" class="header-logo">
+            
             <div class="header-titles">
                 <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h1>
                 <p>มุ่งมั่นพัฒนาวิชาชีพ สู่มาตรฐานสากล</p>
@@ -20,52 +24,42 @@
         </div>
     </header>
 
+    <!-- เมนูนำทาง (Navigation Bar) -->
     <nav>
-        <a href="index.html" style="background-color: #0055a5;">หน้าหลัก</a>
-        <a href="executive.html">ข้อมูลผู้บริหาร</a>
-        <a href="staff.html">ข้อมูลบุคลากร</a>
-        <a href="students.html">ข้อมูลนักเรียน/นักศึกษา</a>
-        <a href="courses.html">สาขาวิชาที่เปิดสอน</a>
+        <a href="index.html" class="active"><i class="fa-solid fa-house"></i> หน้าหลัก</a>
+        <a href="executive.html"><i class="fa-solid fa-user-tie"></i> ข้อมูลผู้บริหาร</a>
+        <a href="staff.html"><i class="fa-solid fa-users"></i> ข้อมูลบุคลากร</a>
+        <a href="students.html"><i class="fa-solid fa-graduation-cap"></i> ข้อมูลนักเรียน/นักศึกษา</a>
+        <a href="courses.html"><i class="fa-solid fa-book-open"></i> สาขาวิชาที่เปิดสอน</a>
     </nav>
 
+    <!-- เนื้อหาหลัก (Main Content Container) -->
     <main class="container">
-        <h2 class="page-title">ยินดีต้อนรับสู่เว็บไซต์สถานศึกษา</h2>
-        <p>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ มุ่งมั่นในการจัดการเรียนการสอนสายอาชีพเพื่อพัฒนาผู้เรียนให้มีความเชี่ยวชาญ ปฏิบัติงานได้จริงตามมาตรฐานสากล</p>
-    </main>
+        <h2 class="page-title"><i class="fa-solid fa-school"></i> ยินดีต้อนรับสู่เว็บไซต์สถานศึกษา</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-top: 1rem;">
+            วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ มุ่งมั่นในการจัดการเรียนการสอนสายอาชีพเพื่อพัฒนาผู้เรียนให้มีความเชี่ยวชาญ ปฏิบัติงานได้จริงตามมาตรฐานสากล พร้อมตอบสนองความต้องการของตลาดแรงงานและเทคโนโลยียุคใหม่
+        </p>
 
-    <footer>
-        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ | ติดต่อ: 053-211075</p>
-    </footer>
-
-</body>
-</html>
-
-    <header>
-        <div class="header-container">
-            <img class="header-logo" src="logo_lannapoly.PNG" alt="โลโก้วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่">
-            
-            <div class="header-text">
-                <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h1>
-                <p>มุ่งมั่นพัฒนาวิชาชีพ สู่มาตรฐานสากล</p>
+        <!-- ส่วนไฮไลท์ข้อมูลเบื้องต้น -->
+        <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <div style="background: #f8f9fa; border-left: 5px solid #003366; padding: 1.2rem; border-radius: 4px;">
+                <h3 style="color: #003366; margin-bottom: 0.5rem;"><i class="fa-solid fa-award"></i> การันตีคุณภาพ</h3>
+                <p>การจัดการศึกษาวิชาชีพที่ได้รับมาตรฐานและเป็นยอมรับในระดับสากล</p>
+            </div>
+            <div style="background: #f8f9fa; border-left: 5px solid #0055a5; padding: 1.2rem; border-radius: 4px;">
+                <h3 style="color: #0055a5; margin-bottom: 0.5rem;"><i class="fa-solid fa-laptop-code"></i> อุปกรณ์ทันสมัย</h3>
+                <p>ห้องปฏิบัติการและเครื่องมือการเรียนรู้ตรงตามเทคโนโลยีปัจจุบัน</p>
+            </div>
+            <div style="background: #f8f9fa; border-left: 5px solid #002244; padding: 1.2rem; border-radius: 4px;">
+                <h3 style="color: #002244; margin-bottom: 0.5rem;"><i class="fa-solid fa-briefcase"></i> โอกาสเติบโต</h3>
+                <p>สร้างเส้นทางอาชีพ มุ่งสู่ตลาดแรงงานทั้งในและต่างประเทศ</p>
             </div>
         </div>
-    </header>
-
-    <nav>
-        <a href="index.html" style="background-color: #0055a5;">หน้าหลัก</a>
-        <a href="executive.html">ข้อมูลผู้บริหาร</a>
-        <a href="staff.html">ข้อมูลบุคลากร</a>
-        <a href="students.html">ข้อมูลนักเรียน/นักศึกษา</a>
-        <a href="courses.html">สาขาวิชาที่เปิดสอน</a>
-    </nav>
-
-    <main class="container">
-        <h2 class="page-title">ยินดีต้อนรับสู่เว็บไซต์สถานศึกษา</h2>
-        <p>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ มุ่งมั่นในการจัดการเรียนการสอนสายอาชีพเพื่อพัฒนาผู้เรียนให้มีความเชี่ยวชาญ ปฏิบัติงานได้จริงตามมาตรฐานสากล</p>
     </main>
 
+    <!-- ส่วนท้าย (Footer) -->
     <footer>
-        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ </p>
+        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ | โทรศัพท์: 053-211075</p>
     </footer>
 
 </body>
