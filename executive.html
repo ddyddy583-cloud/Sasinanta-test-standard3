@@ -1,36 +1,65 @@
-<!DOCTYPE html>
+
 <html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลผู้บริหาร</title>
+    <title>ข้อมูลผู้บริหาร - วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
     <header>
-        <h1> วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h1>
+        <div class="header-content">
+            <img src="logo_lannapoly.png" alt="โลโก้วิทยาลัย" class="header-logo">
+            <div class="header-titles">
+                <h1>วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</h1>
+                <p>มุ่งมั่นพัฒนาวิชาชีพ สู่มาตรฐานสากล</p>
+            </div>
+        </div>
     </header>
 
     <nav>
         <a href="index.html">หน้าหลัก</a>
-        <a href="executive.html">ข้อมูลผู้บริหาร</a>
+        <a href="executive.html" style="background-color: #0055a5;">ข้อมูลผู้บริหาร</a>
         <a href="staff.html">ข้อมูลบุคลากร</a>
         <a href="students.html">ข้อมูลนักเรียน/นักศึกษา</a>
         <a href="courses.html">สาขาวิชาที่เปิดสอน</a>
     </nav>
 
     <main class="container">
-        <h2 class="page-title">คณะผู้บริหารสถานศึกษา</h2>
-        <ul>
-            <li><strong>นายฉลวย พันธ์ทอง</strong> - ผู้อำนวยการ</li>
-            <li><strong>นายครรชิต เมฆขลา</strong> - รองผู้อำนวยการฝ่ายวิชาการ</li>
-            <li><strong>นายประสิทธิ์ ชูดวง</strong> - รองผู้อำนวยการฝ่ายกิจการนักเรียน</li>
-        </ul>
+        <h2 class="page-title"><i class="fa-solid fa-user-tie"></i> คณะผู้บริหารสถานศึกษา</h2>
+        
+        <div class="executive-grid">
+            
+            <div class="executive-card main-director">
+                <img class="executive-img" src="00111.jpg" alt="นายฉลวย พันธ์ทอง">
+                <div class="executive-name">นายฉลวย พันธ์ทอง</div>
+                <div class="executive-role"><i class="fa-solid fa-star"></i> ผู้อำนวยการ</div>
+            </div>
+
+        </div>
+
+        <div class="executive-grid">
+
+            <div class="executive-card">
+                <img class="executive-img" src="01013.jpg" alt="นายครรชิต เมฆขลา">
+                <div class="executive-name">นายครรชิต เมฆขลา</div>
+                <div class="executive-role">รองผู้อำนวยการฝ่ายวิชาการ</div>
+            </div>
+
+            <div class="executive-card">
+                <img class="executive-img" src="06003.jpg" alt="นายประสิทธิ์ ชูดวง">
+                <div class="executive-name">นายประสิทธิ์ ชูดวง</div>
+                <div class="executive-role">รองผู้อำนวยการฝ่ายกิจการนักเรียน</div>
+            </div>
+
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่ | ติดต่อ: 00-000-00000</p>
+        <p>&copy; 2026 วิทยาลัยเทคโนโลยีโปลิเทคนิคลานนา เชียงใหม่</p>
     </footer>
 
 </body>
