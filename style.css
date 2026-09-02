@@ -72,3 +72,89 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+/* CSS เฉพาะหน้า courses.html */
+        .category-title {
+            color: #003366;
+            font-size: 1.3rem;
+            margin: 2rem 0 1rem 0;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #0055a5;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .course-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            border-color: #0055a5;
+        }
+
+        .course-icon {
+            width: 50px;
+            height: 50px;
+            background: #eef5ff;
+            color: #0055a5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .course-name-th {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.2rem;
+        }
+
+        .course-name-en {
+            font-size: 0.9rem;
+            color: #64748b;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+
+        .badge-group {
+            display: flex;
+            gap: 8px;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .badge-pvc {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .badge-pvs {
+            background-color: #f0fdf4;
+            color: #15803d;
+        }
