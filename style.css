@@ -1,0 +1,74 @@
+/* การตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ส่วนหัว (Header) */
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* เมนูเชื่อมโยง (Navigation Bar) */
+nav {
+    background-color: #002244;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #0055a5;
+}
+
+/* ส่วนเนื้อหาหลัก (Content Container) */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+.page-title {
+    border-bottom: 3px solid #003366;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #003366;
+}
+
+/* ส่วนท้าย (Footer) */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
