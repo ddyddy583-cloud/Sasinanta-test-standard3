@@ -3,30 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลบุคลากร</title>
+    <title>ข้อมูลบุคลากร - วิทยาลัยเทคโนโลยีตัวอย่าง</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* CSS เพิ่มเติมเฉพาะหน้า staff.html */
+        .department-title {
+            color: #003366;
+            font-size: 1.3rem;
+            margin: 2.5rem 0 1.2rem 0;
+            padding-bottom: 0.4rem;
+            border-bottom: 2px solid #0055a5;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .staff-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .staff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            border-color: #0055a5;
+        }
+
+        .staff-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem auto;
+            border: 3px solid #0055a5;
+            padding: 2px;
+            background: #fff;
+        }
+
+        .staff-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .staff-role {
+            font-size: 0.9rem;
+            color: #0055a5;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .staff-dept {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-bottom: 0.8rem;
+        }
+
+        .staff-contact {
+            font-size: 0.85rem;
+            color: #475569;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- ส่วนหัว (Header) -->
     <header>
         <h1>วิทยาลัยเทคโนโลยีตัวอย่าง</h1>
+        <p>มุ่งมั่นพัฒนาวิชาชีพ สู่มาตรฐานสากล</p>
     </header>
 
+    <!-- เมนูเชื่อมโยง (Navigation Bar) -->
     <nav>
         <a href="index.html">หน้าหลัก</a>
         <a href="executive.html">ข้อมูลผู้บริหาร</a>
-        <a href="staff.html">ข้อมูลบุคลากร</a>
+        <a href="staff.html" style="background-color: #0055a5;">ข้อมูลบุคลากร</a>
         <a href="students.html">ข้อมูลนักเรียน/นักศึกษา</a>
         <a href="courses.html">สาขาวิชาที่เปิดสอน</a>
     </nav>
 
+    <!-- ส่วนเนื้อหาหลัก (Content Container) -->
     <main class="container">
+        
         <h2 class="page-title">ข้อมูลครูและบุคลากรทางการศึกษา</h2>
         <p>วิทยาลัยของเรามีครูผู้สอนที่มีความเชี่ยวชาญเฉพาะทางในหลากหลายสาขาวิชา พร้อมให้การดูแลนักเรียนทุกคนอย่างใกล้ชิด</p>
+
+        <!-- หมวดที่ 1: แผนกวิชาอุตสาหกรรม -->
+        <h3 class="department-title">
+            <i class="fa-solid fa-wrench"></i>เทคนิคเครื่องกล
+        </h3>
+
+        <div class="staff-grid">
+             <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นายภราดร ทองศิริ</div>
+                <div class="staff-role">หัวหน้าสาขา</div>
+                <div class="staff-dept">เทคนิคเครื่องกล</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+            <!-- คนที่ 1 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">ว่าที่ร้อยตรีปริญญา ทองเกษม</div>
+                <div class="staff-role">ครูผู้สอนา</div>
+                <div class="staff-dept">เทคนิคเครื่องกล</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+
+          <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นายสุภีย์ จิตสม</div>
+                <div class="staff-role">ครูผู้สอนา</div>
+                <div class="staff-dept">เทคนิคเครื่องกล</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+
+            <!-- คนที่ 2 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นางสาวสวิตตา ประทุม</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">เทคโนโลยีสารสนเทศ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+
+            <!-- คนที่ 3 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นางสาววรรณวิษา ประภาพันธ์</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">แผนกสามัญ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+            </div>
+        </div>
+        <div class="staff-grid">
+            
+        <h3 class="department-title">
+            <i class="fa-solid fa-wrench"></i>เทคโนโลยีสารสนเทศ
+        </h3>
+
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นางสาวมยุลีย์ พงษ์บุพศิริกุล</div>
+                <div class="staff-role">หัวหน้าแผนกวิชา</div>
+                <div class="staff-dept">สาขาเทคโนโลยีสารสนเทศ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+            
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นางสาวสวิตตา ประทุม</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">สาขาเทคโนโลยีสารสนเทศ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+
+            <!-- คนที่ 5 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นายไพศาล ณ ลำปาง</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">สาขาเทคโนโลยีสารสนเทศ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+
+        <h3 class="department-title">
+            <i class="fa-solid fa-wrench"></i>บริหารธุรกิจ
+        </h3>
+            <!-- คนที่ 6 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นายณัฐพล อุ่นภักดิ์</div>
+                <div class="staff-role">หัวหน้า</div>
+                <div class="staff-dept">บริหารธุรกิจ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> 
+                </div>
+            </div>
+        </div>
+        <div class="staff-grid">
+            <!-- คนที่ 7 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="https://via.placeholder.com/150" alt="รูปบุคลากร">
+                <div class="staff-name">นางสาวญาษิดา ธรรมปัญโญ</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">บริหารธุรกิจ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> thongthiew.b@school.ac.th
+                </div>
+            </div>
+
+            <!-- คนที่ 8 -->
+            <div class="staff-card">
+                <img class="staff-avatar" src="11658.jpg" alt="รูปบุคลากร">
+                <div class="staff-name">นายพงศกรณ์ คัมภีระ</div>
+                <div class="staff-role">ครูผู้สอน</div>
+                <div class="staff-dept">บริหารธุรกิจ</div>
+                <div class="staff-contact">
+                    <i class="fa-solid fa-envelope"></i> rongram.t@school.ac.th
+                </div>
+            </div>
+        </div>
+
     </main>
 
+    <!-- ส่วนท้าย (Footer) -->
     <footer>
-        <p>&copy; 2026 วิทยาลัยเทคโนโลยีตัวอย่าง | ติดต่อ: 02-123-4567</p>
+        <p>&copy; 2026 วิทยาลัยเทคโนโลยีตัวอย่าง | ติดต่อ: 02-123-4567 | Email: info@school.ac.th</p>
     </footer>
 
 </body>
